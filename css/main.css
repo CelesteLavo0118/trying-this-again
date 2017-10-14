@@ -3,15 +3,26 @@ html{
   text-align: center;
 }
 
-header{
+#header{
   background-image: url(../assets/marble.png);
-  background-size: contain;
+  background-size: cover;
   color: black;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
   background-color: lightgrey;
+}
+#header2{
+  /*header for about page*/
+
+  color: black;
+  width: 100%;
+  background-color: lightgrey;
+}
+
+#nav2{
+  padding-left: 10em;
 }
 
 nav, nav a{
@@ -23,15 +34,15 @@ nav, nav a{
   padding: .5rem;
 }
 
+nav li{
+  display: inline-block;
+}
+
 nav a:hover{
   text-decoration: none;
   color: grey;
   margin-bottom: .25em;
   margin-top: .25em;
-}
-
-#nav{
-  padding-top: 3.5em;
 }
 
 a{
@@ -48,8 +59,22 @@ a:hover{
   margin-top: .25em;
 }
 
+#current{
+  /*current page*/
+
+  text-decoration: underline;
+  color: #373772;
+}
+
 .logo{
   width: 6em;
+  padding: 0;
+  margin: 0 auto;
+  display: block;
+}
+
+.logo2{
+  width: 3em;
   padding: 0;
   margin: 0 auto;
   display: block;
@@ -64,4 +89,129 @@ a:hover{
 
 .down-arrow{
   max-width:2em;
+}
+.content{
+  text-align: left;
+  padding: 1em;
+}
+
+#message{
+  width: 30em;
+  height: 10em;
+}
+
+.labels{
+  display: block;
+}
+
+#about{
+  padding: 1em;
+}
+
+.title{
+  text-align: left;
+  padding-left: .7em;
+  color: #505050;
+}
+
+figure{
+  padding-left: .7em;
+  float: left;
+}
+
+.img-flex{
+  width: 100%;
+}
+
+.portrait{
+  max-width: 15em;
+}
+
+.caption{
+  text-align: right;
+  font-size: 10pt;
+  color: #505050;
+}
+
+article{
+  font-size: 12pt;
+  text-align: left;
+  padding-right: 3em;
+  padding-left: 3em;
+  position: relative;
+  float: right;
+}
+
+.firstcharacter{
+  float: left;
+  color: #505050;
+  font-size: 3.5em;
+  padding-top: 4px;
+  padding-right: 5px;
+  padding-left: 3px;
+  line-height: 75%;
+  font-weight: 300;
+  font-family: serif;
+}
+
+.signature{
+  color: #505050;
+}
+
+#social{
+  max-width: 1.5em;
+  display: inline;
+}
+
+footer{
+  color: black;
+  padding: 1em;
+  background-color: lightgrey;
+}
+
+@media only screen and (min-width: 608px){
+
+  #down{
+    position: sticky;
+    text-align: center;
+    padding-top: 425px;
+    padding-left: 45vw;
+  }
+
+}
+
+@media only screen and (min-width: 960px){
+
+  #down{
+    position: sticky;
+    text-align: center;
+    padding-top: 350px;
+    padding-left: 45vw;
+  }
+
+}
+
+@media only screen and (max-width: 607px){
+
+  #nav{
+    position: absolute;
+    padding-top: 9em;
+    align-content: center;
+  }
+
+}
+
+@media only screen and (max-width: 607px){
+
+  #nav2{
+    padding-left: 0em;
+  }
+
+  figure{
+    align-content:
+  }
+
+  .img-flex{
+
+  }
 }

@@ -13,32 +13,76 @@
   <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet" type='text/css'>
 </head>
 <body>
-  <header class="masthead grid">
-    <div class="unit xs-1 s-1 m-1-4 l-1-3 island-1-2">
+  <header class="masthead grid" id="header">
+    <div class="unit xs-1 s-1 m-1 l-1 island-1-2">
       <img class="logo" src="production/logo.svg" alt="logo">
     </div>
 
-    <nav id="nav" class="unit xs-1 s-1 m-3-4 l-2-3 island-1-2" role="navigation">
-      <li><a href="#top">Home</a></li>
-      <li><a href="#team">The Team</a></li>
-      <li><a href="#work">Our Work</a></li>
-      <li><a href="#contact">Contact Us</a></li>
+    <nav id="nav" class="unit xs-1 s-1 m-1 l-1 island-1-2" role="navigation">
+      <li><a href="about.html"><strong>About Me</strong></a></li>
+      <li><a href="#work"><strong>Work</strong></a></li>
+      <li><a href="#contact"><strong>Contact</strong></a></li>
     </ul>
     </nav>
 
     <div class="grid">
       <div class="unit xs-1 s-1 m-1 l-1 island-1-2">
         <ul class="list-group list-group--inline push-0 mega" id="down">
-          <li><a href="#team"><img class="down-arrow" src="production/arrow.svg" alt="down"></a></li>
+          <li><a href="#contact"><img class="down-arrow" src="production/arrow.svg" alt="down"></a></li>
         </ul>
       </div>
     </div>
   </header>
 
   <main>
+    <div class="grid">
+
+      <div class="unit xs-1 s-1 m-1 l-1 island-1-2" id="contact">
+        <h1>Contact</h1>
+      </div>
+        <div class="content unit xs-1 s-1 m-1 l-1-2 island-1-2">
+          <p class="content-fill"> Feel free to contact me with any questions:
+            <br>@ hello@celestelavoie.xyz</p>
+          <form action="" method="post">
+            <div class="content">
+              <label for="name" class="labels">Name</label>
+              <input id="name" required placeholder="John Doe" name="name">
+            </div>
+
+            <div class="content">
+              <label for="email" class="labels">Email</label>
+              <input id="email" type="email" name="email" required placeholder="you@example.com">
+            </div>
+
+            <div class="content">
+              <label for="message" class="labels">Message</label>
+              <textarea id="message" name="message" placeholder="Write your message here..."></textarea>
+            </div>
+
+            <div class="content">
+              <button type="submit">Send</button>
+            </div>
+
+            <input type="hidden" name="_next"
+            value="">
+
+          </form>
+        </div>
+    </div>
   </main>
 
   <footer role="contentinfo">
+    <ul class="list-group list-group--inline push-0 mega" id="social">
+      <li><a href=""><img id="social" src="production/behance.svg" alt="behance"></a></li>
+      <li><a href=""><img id="social" src="production/instagram.svg" alt="instagram"></a></li>
+      <li><a href=""><img id="social" src="production/redbubble.svg" alt="youtube"></a></li>
+      <li><a href=""><img id="social" src="production/vimeo.svg" alt="vimeo"></a></li>
+    </ul>
+
+    <p>Copyright (c) 2017 Copyright Celeste Lavoie All Rights Reserved. </p>
+    <ul class="list-group list-group--inline push-0 mega">
+      <li class="back"><a href="#top">back to top</a></li>
+    </ul>
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.0.0-beta1.min.js"></script>
